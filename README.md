@@ -69,6 +69,9 @@ The `assignment` project contains two backend microservices and a separate front
 
 The `account-service` integrates with the `transaction-service` using REST calls.
 Ensure both services are running before testing the integration.
+
+3. **CI/CD (In Progress):**
+
 ### Support
 For any issues or questions, please contact the developer.
 * **mobile:** 0645881639
