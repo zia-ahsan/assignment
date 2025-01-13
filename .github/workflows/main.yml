@@ -31,7 +31,6 @@ jobs:
           path: |
             account-service/target/*.jar
             transaction-service/target/*.jar
-            ui-service/target/*.jar
 
   dockerize:
     name: Docker Build and Push
@@ -62,8 +61,3 @@ jobs:
         run: |
           docker build -t ${{ secrets.DOCKER_USERNAME }}/transaction-service:latest ./transaction-service
           docker push ${{ secrets.DOCKER_USERNAME }}/transaction-service:latest
-
-      - name: Build and Push ui-service Docker Image
-        run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/ui-service:latest ./ui-service
-          docker push ${{ secrets.DOCKER_USERNAME }}/ui-service:latest
