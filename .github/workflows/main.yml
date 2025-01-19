@@ -70,5 +70,5 @@ jobs:
 
       - name: Deploy to Minikube
         run: |
-          kubectl apply -f k8s/transaction-service.yaml
-          kubectl apply -f k8s/account-service.yaml
+          kubectl apply -f ${{ github.workspace }}/k8s/transaction-service.yaml
+          kubectl apply -f ${{ github.workspace }}/k8s/account-service.yaml
