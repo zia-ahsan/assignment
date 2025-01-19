@@ -63,6 +63,8 @@ jobs:
           docker push ${{ secrets.DOCKER_USERNAME }}/transaction-service:latest
 
   deploy:
+    name: Deploy to Minikube
+    needs: dockerize
     runs-on: [self-hosted, wsl-runner-assignment]  # Specify self-hosted runner here
     steps:
       - name: Checkout Code
