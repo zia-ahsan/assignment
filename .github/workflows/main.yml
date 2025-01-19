@@ -63,7 +63,7 @@ jobs:
           docker push ${{ secrets.DOCKER_USERNAME }}/transaction-service:latest
 
   deploy:
-    runs-on: wsl-runner-assignment  # Specify self-hosted runner here
+    runs-on: [self-hosted, wsl-runner-assignment]  # Specify self-hosted runner here
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
