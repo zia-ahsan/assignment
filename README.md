@@ -70,7 +70,8 @@ The `assignment` project contains two backend microservices and a separate front
 The `account-service` integrates with the `transaction-service` using REST calls.
 Ensure both services are running before testing the integration.
 
-3. **CI/CD (In Progress):**
+3. **CI/CD:**
+Implemented CI/CD using self-hosted runner to deploy to minikube
 
 ### Support
 For any issues or questions, please contact the developer.
